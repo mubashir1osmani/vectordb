@@ -1,0 +1,14 @@
+[package]
+name = "vectordb"
+version = "0.1.0"
+edition = "2021"
+description = "Single-node vector database: exact search, HNSW, and a durable WAL"
+license = "Apache-2.0"
+rust-version = "1.75"
+
+[dependencies]
+rand = "0.8"
+
+[[bin]]
+name = "vdb"
+path = "src/bin/vdb.rs"
