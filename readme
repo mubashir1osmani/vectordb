@@ -1,0 +1,10 @@
+built a vector db that does single node vector search
+
+- exact flat search, used as the recall oracle
+- in-memory HNSW
+- write  ahead log and a segment checkpoint so a restart keeps inserts, updates and deletes
+
+
+ui/
+- built on elm
+- input takes a local or cloud dataset over http

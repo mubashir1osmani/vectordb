@@ -1,0 +1,20 @@
+[package]
+name = "vdb-ui"
+version = "0.1.0"
+edition = "2021"
+description = "Local UI for loading an embedding file and searching it"
+license = "Apache-2.0"
+rust-version = "1.75"
+
+[dependencies]
+arrow-array = "54"
+arrow-cast = "54"
+arrow-schema = "54"
+axum = "0.8"
+csv = "1"
+parquet = "54"
+reqwest = { version = "0.12", default-features = false, features = ["blocking", "json", "rustls-tls"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["macros", "net", "rt-multi-thread", "sync", "time"] }
+vectordb = { path = "../vectordb" }
